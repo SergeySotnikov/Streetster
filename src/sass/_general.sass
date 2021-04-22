@@ -21,10 +21,37 @@ header
                 width: 100%
     .search-form
         margin: 0 auto
-        width: 400px
-        height: 30px
-        background: #FFFFFF
-        border-radius: 15.5px
+        width: 100%
+        form
+            position: relative
+            width: 400px
+            margin: 0 auto
+            input
+                width: 400px
+                height: 30px
+                padding: 0 10px
+                background: #FFFFFF
+                border-radius: 15.5px
+                border: none
+                outline: none
+                text-align: center
+            button
+                height: 15px
+                width: 15px
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                left: 10px
+                cursor: pointer
+                border: none
+                outline: none
+                background: transparent
+                &::before
+                    content: ''
+                    display: block
+                    width: 14px
+                    height: 14px
+                    background: url('../icons/search.svg')
     nav
         display: flex
         justify-content: flex-end
@@ -32,6 +59,22 @@ header
         .cart
             width: 26px
             height: 25px
+            margin-right: 35px
+        .hamburger
+            width: 26px
+            height: 23px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            span
+                display: block
+                height: 2px
+                width: 100%
+                background-color: #fff
+        
+        
+            
+
             
 
 
@@ -67,6 +110,7 @@ header
             display: flex
             justify-content: center
             align-items: center
+            margin-top: 25px
             width: 206px
             height: 41px
             background: #000000
