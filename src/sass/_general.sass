@@ -1,16 +1,22 @@
+body
+    max-width: 1441px
+    margin: 0 auto
 header
     position: absolute
-    width: 100%
     height: 90px
     top: 35px
     z-index: 1
     .container-header
+        width: 1441px
+        margin: 0 auto
         display: flex
         justify-content: space-between
         align-items: center
         div
             width: 33%
 .container
+    width: 1441px
+    margin: 0 auto
     padding: 0 70px
     height: 100%
     .logo
@@ -130,28 +136,10 @@ header
                         width: 100%
             &-active
                 top: -37px
- 
-                
-
-                        
-        
-        
-            
-
-            
-
-
-
-
-
-
-
-
-
-
 .first-screen
     height: 100vh
-    
+    width: 1441px
+    margin: 0 auto
     padding-bottom: 229px
     background: url(../img/bg/first-screen-bg.jpg)
     background-size: cover
@@ -177,7 +165,7 @@ header
             width: 206px
             height: 41px
             background: #000000
-            transition: 0.3s all
+            transition: 0.5s all
             &:hover
                 border-radius: 45px
             a
@@ -185,3 +173,46 @@ header
                 font-weight: bold
                 font-size: 18px
                 color: #FFFFFF
+.second-screen
+    width: 1441px
+    margin: 0 auto
+    padding-top: 120px
+    background: url(../img/bg/second-bg.svg)
+    .category
+        &-title
+            font-weight: 700
+            font-size: 64px
+            line-height: 60px
+            color: #000000
+    .swiper-container
+            margin-top: 31px
+    .product
+        margin-top: 170px
+        &-title
+            font-weight: 700
+            font-size: 64px
+            line-height: 60px
+            color: #000000
+        &-wrapper
+            margin-top: 30px
+            display: flex
+            height: 450px
+            .mainitem
+                flex-grow: 1
+                width: 746px
+                background: #b5ced8
+            .sideitem
+                width: 550px
+                display: flex
+                flex-wrap: wrap
+                &-item
+                    margin: 1px
+                    height: 210px
+                    width: 245px
+                    margin: 0 15px
+                    background: grey
+
+                
+
+                
+            
