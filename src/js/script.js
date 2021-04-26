@@ -28,7 +28,7 @@ new Swiper('.bike-slider',{
     },
 
     // Количество отображаемых слайдов
-    slidesPerView: 1.85,
+    slidesPerView: 1.9,
 
     // Отключение функционала если слайдов меньше чем нужно
     watchOverflow: true,

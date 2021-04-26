@@ -184,8 +184,41 @@ body
             font-size: 64px
             line-height: 60px
             color: #000000
-    .swiper-container
-            margin-top: 31px
+    .bike-slider
+        margin-top: 31px
+        position: relative
+        .bg-layer-prev
+            width: 204px
+            height: 320px
+            position: absolute
+            z-index: 2
+            background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%)
+        .bg-layer-next
+            width: 204px
+            height: 320px
+            position: absolute
+            z-index: 2
+            right: 0
+            background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%)
+            transform: matrix(-1, 0, 0, 1, 0, 0)
+        .swiper-slide-wrapper
+            position: relative
+        .swiper-slide-discr
+            position: absolute
+            left: 50%
+            transform: translateX(-37%)
+            bottom: 20px
+            font-family: Coven
+            font-weight: normal
+            font-size: 40px
+            text-align: center
+            color: #FFFFFF
+        .swiper-button-prev
+            left: 100px
+            color: #FFFFFF
+        .swiper-button-next
+            right: 100px
+            color: #FFFFFF   
     .product
         margin-top: 170px
         &-title
@@ -204,6 +237,8 @@ body
             .sideitem
                 width: 550px
                 display: flex
+                flex-direction: column
+                justify-content: space-between
                 flex-wrap: wrap
                 &-item
                     margin: 1px
