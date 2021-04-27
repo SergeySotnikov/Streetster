@@ -234,9 +234,35 @@ body
             display: flex
             height: 450px
             .mainitem
+                position: relative
+                padding: 60px 72px 0 0
                 flex-grow: 1
                 width: 746px
-                background: #b5ced8
+                text-align: right
+                background: #151515
+                &-titl
+                    font-weight: 700
+                    font-size: 36px
+                    text-transform: uppercase
+                    color: #FFFFFF
+                &-discr
+                    font-weight: 400
+                    font-size: 18px
+                    line-height: 23px
+                    color: #FFFFFF
+                &-img
+                    width: 506px
+                    height: 269px
+                    margin-top: 57px
+                    img
+                        height: 100%
+                        width: 100%
+                &-link
+                    a
+                        position: absolute
+                        bottom: 50px
+                        right: 50px
+        
             .sideitem
                 width: 550px
                 display: flex
@@ -244,11 +270,28 @@ body
                 justify-content: space-between
                 flex-wrap: wrap
                 &-item
-                    margin: 1px
+                    padding: 30px 0
                     height: 210px
                     width: 245px
                     margin: 0 15px
-                    background: grey
+                    background: #151515
+                    &-img
+                        margin: 0 auto
+                        height: 100px
+                        width: 108px
+                        img
+                            height: 100%
+                            width: 100%
+                    &-discr
+                        margin: 0 auto
+                        margin-top: 21px
+                        width: 100%
+                        text-align: center
+                        a
+                            font-weight: 400
+                            text-decoration: none
+                            font-size: 24px
+                            color: #FFFFFF
 
                 
 
