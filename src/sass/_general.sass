@@ -136,7 +136,7 @@ body
                     &::before
                         position: absolute
                         bottom: 0
-                        transition: 0.8s all
+                        transition: 0.6s all
                         content: ''
                         display: block
                         height: 1px
@@ -180,7 +180,7 @@ body
     margin: 0 auto
     padding-top: 120px
     padding-bottom: 157px
-    background: url(../img/bg/second-bg.svg)
+    background: url(../img/bg/Vector-second-bg.svg)
     .category
         &-title
             font-weight: 700
@@ -211,11 +211,13 @@ body
             left: 50%
             transform: translateX(-37%)
             bottom: 20px
-            font-family: Coven
-            font-weight: normal
-            font-size: 40px
-            text-align: center
-            color: #FFFFFF
+            a
+                font-family: Coven
+                font-weight: normal
+                font-size: 40px
+                text-align: center
+                text-decoration: none
+                color: #FFFFFF
         .swiper-button-prev
             left: 100px
             color: #FFFFFF
@@ -259,6 +261,7 @@ body
                         width: 100%
                 &-link
                     a
+                        transition: 0.5s all
                         position: absolute
                         bottom: 50px
                         right: 50px
@@ -294,8 +297,62 @@ body
                             text-decoration: none
                             font-size: 24px
                             color: #FFFFFF
+.streetster-info
+    background-color: #F2F2F2
+    min-height: 275px
+    padding: 50px 0
+    &-text 
+        font-weight: 400
+        font-size: 24px
+        color: #000000
+.streetster-descr
+    min-height: 903px
+    padding-top: 83px
+    background-image: url(../img/bg/Vector-third-bg.svg)
+    background-repeat: no-repeat
+    .streetster-titl
+        font-weight: 700
+        font-size: 36px
+        text-align: center
+        color: #000000
+    .streetster
+        margin-top: 63px
+        padding: 0 70px
+        display: flex
+        justify-content: space-between
+        &-item
+            height: 300px
+            width: 331px
+            position: relative
+            &-img
+                height: 133.6px
+                width: 133.6px
+                position: absolute
+                top: 0
+                left: 50%
+                transform: translateX(-50%)
+                z-index: 1
+                img
+                    height: 100%
+                    width: 100%
+            &-descr
+                height: 210px
+                width: 100%
+                position: absolute
+                bottom: 0
+                padding: 57px 18px 24px 18px
+                background-color: #F2F2F2
+                &-titl 
+                    margin: 0
+                    font-weight: 700
+                    font-size: 24px
+                    text-align: center
+                    color: #000000
+                &-text 
+                    margin-top: 10px
+                    font-weight: 400
+                    font-size: 18px
+                    text-align: center
+                    color: #000000
 
-                
 
-                
-            
