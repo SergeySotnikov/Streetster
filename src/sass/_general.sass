@@ -1,3 +1,6 @@
+html
+    &:root
+        --swiper-navigation-size: 33px
 body
     max-width: 1441px
     margin: 0 auto
@@ -354,5 +357,66 @@ body
                     font-size: 18px
                     text-align: center
                     color: #000000
+.news
+    position: relative
+    top: -250px
+    &-titl
+        text-align: center
+        font-weight: 700
+        font-size: 64px
+        color: #000000
+    .news-slider 
+        position: static
+        margin-top: 63px
+        width: 1098px
+        height: 558.4px
+        .swiper-slide-news
+            width: 338px
+            .slide-news-img
+                width: 338px
+                height: 288px
+            .news-descr
+                position: relative
+                width: 338px
+                height: 270px
+                padding-top: 20px
+                background: #F2F2F2
+                &-titl 
+                    width: 100%
+                    font-weight: 700
+                    font-size: 24px
+                    text-align: center
+                    color: #000000 
+                &-text 
+                    width: 100%
+                    margin-top: 14px
+                    font-weight: 400
+                    font-size: 18px
+                    text-align: center
+                    color: #000000
+                .news-btn
+                    position: absolute
+                    bottom: 0
+                    width: 338px
+                    height: 52.47px
+                    border: 3px solid #000000
+                    box-sizing: border-box
+                    font-weight: 700
+                    font-size: 18px
+                    text-align: center
+                    color: #000000
 
-
+                    &:hover
+                        cursor: pointer
+                        background: #000000
+                        border: 3px solid #000000
+                        box-sizing: border-box
+                        color: #FFFFFF
+        .swiper-button-prev
+            left: 100px
+            color: #000000
+            top: 60%
+        .swiper-button-next
+            right: 100px
+            color: #000000
+            top: 60%

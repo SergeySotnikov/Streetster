@@ -42,3 +42,27 @@ new Swiper('.bike-slider',{
     // Бесконечный слайдер
     loop: true,
 });
+
+new Swiper('.news-slider',{
+    
+    // Кнопки для навигации
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+
+    // Количество отображаемых слайдов
+    slidesPerView: 3,
+
+    //Активный слайд по центру
+    centeredSlides: true,
+
+      // Отступ между слайдами
+    spaceBetween: 42,
+
+    // Отключение функционала если слайдов меньше чем нужно
+    watchOverflow: true,
+
+    // Бесконечный слайдер
+    loop: true,
+});
