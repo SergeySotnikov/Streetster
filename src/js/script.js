@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector('.menu'),
-    menuItem = document.querySelectorAll('.menu-link'),
+    menuItem = document.querySelectorAll('.menu-link , .social-link'),
     cart = document.querySelector('.cart'),
     hamburger = document.querySelector('.hamburger');
 
