@@ -21,171 +21,188 @@ body
     background-size: cover
     background-position: center bottom
     background-repeat: no-repeat
-    .header
-        width: 100%
-        height: 90px
+.header
+    width: 100%
+    height: 90px
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+    align-items: center
+    div
+        width: 33%
+    .logo
+        width: 161px
+        height: 65px
+        a
+            img
+                width: 100%
+    .search-form
         margin: 0 auto
-        display: flex
-        justify-content: space-between
-        align-items: center
-        div
-            width: 33%
-        .logo
-            width: 161px
-            height: 65px
-            a
-                img
-                    width: 100%
-        .search-form
+        width: 100%
+        form
+            position: relative
+            width: 400px
             margin: 0 auto
-            width: 100%
-            form
-                position: relative
+            input
                 width: 400px
-                margin: 0 auto
-                input
-                    width: 400px
-                    height: 30px
-                    padding: 0 10px
-                    background: #FFFFFF
-                    border-radius: 15.5px
-                    border: none
-                    outline: none
-                    text-align: center
-                button
-                    height: 15px
-                    width: 15px
-                    position: absolute
-                    top: 50%
-                    transform: translateY(-50%)
-                    left: 10px
-                    cursor: pointer
-                    border: none
-                    outline: none
-                    background: transparent
-                    &::before
-                        content: ''
-                        display: block
-                        width: 14px
-                        height: 14px
-                        background: url('../icons/search.svg')
-        nav
-            display: flex
-            justify-content: flex-end
-            align-items: center
-            .cart-link
-                z-index: 1
-                width: 26px
-                height: 25px
-                margin-right: 35px
-            .cart
-                &-menu-hover
-                    fill: black
-            .hamburger
-                z-index: 1
-                width: 26px
-                height: 23px
-                display: flex
-                flex-direction: column
-                justify-content: space-between
-                cursor: pointer
-                span
-                    display: block
-                    height: 2px
-                    width: 100%
-                    background-color: #ffffff
-                    transition: 0.3s all
-                &-active
-                    justify-content: center
-                    span
-                        background-color: #000000
-                        margin-bottom: -2px
-                        &:nth-child(1)
-                            transform: rotate(-45deg)
-                        &:nth-child(2)
-                            display: none
-                        &:nth-child(3)
-                            transform: rotate(45deg)
-            .menu
-                z-index: 0
+                height: 30px
+                padding: 0 10px
+                background: #FFFFFF
+                border-radius: 15.5px
+                border: none
+                outline: none
+                text-align: center
+            button
+                height: 15px
+                width: 15px
                 position: absolute
-                margin: 0
-                display: flex
-                flex-direction: column
-                width: 346px
-                border-radius: 0px
-                padding: 140px 62px 80px 72px
-                height: 550px;
-                justify-content: center
-                background: #ffffffd5
-                top: -637px
-                right: 0px
-                transition: 0.6s all
-                &-item
-                    list-style-type: none
-                    margin-bottom: 15px
-                    &:nth-child(4) 
-                        margin-top: 40px
-                    &:nth-child(n+4) a
-                        font-weight: 400
-                        font-size: 18px 
-                    &:nth-child(7)
-                        margin-top: 40px
-                        margin-bottom: 0    
-                    .social-link
-                        text-decoration: none
-                        margin-right: 5px
-                        svg
-                            width: 24px
-                            height: 24px  
-                &-link
-                    position: relative
-                    font-weight: 700
-                    font-size: 24px
-                    color: #000000
-                    text-decoration: none
-                    &::before
-                        position: absolute
-                        bottom: 0
-                        transition: 0.6s all
-                        content: ''
-                        display: block
-                        height: 1px
-                        background-color: #000000
-                        width: 0%
-                    &:hover
-                        &::before
-                            width: 100%
-                &-active
-                    top: 0
-    .bike
-        position: absolute
-        bottom: 229px
-        &-model
-            font-weight: 400
-            font-size: 24px
-            color: #FFFFFF
-            text-transform: uppercase
-        &-discr
-            font-weight: 700
-            font-size: 64px
-            color: #FFFFFF
-        &-link
+                top: 50%
+                transform: translateY(-50%)
+                left: 10px
+                cursor: pointer
+                border: none
+                outline: none
+                background: transparent
+                &::before
+                    content: ''
+                    display: block
+                    width: 14px
+                    height: 14px
+                    background: url('../icons/search.svg')
+    nav
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        .cart-link
+            z-index: 1
+            width: 26px
+            height: 25px
+            margin-right: 35px
+        .cart
+            &-menu-hover
+                fill: black
+        .hamburger
+            z-index: 1
+            width: 26px
+            height: 23px
             display: flex
+            flex-direction: column
+            justify-content: space-between
+            cursor: pointer
+            span
+                display: block
+                height: 2px
+                width: 100%
+                background-color: #ffffff
+                transition: 0.3s all
+            &-active
+                justify-content: center
+                span
+                    background-color: #000000
+                    margin-bottom: -2px
+                    &:nth-child(1)
+                        transform: rotate(-45deg)
+                    &:nth-child(2)
+                        display: none
+                    &:nth-child(3)
+                        transform: rotate(45deg)
+        .menu
+            z-index: 0
+            position: absolute
+            margin: 0
+            display: flex
+            flex-direction: column
+            width: 346px
+            border-radius: 0px
+            padding: 140px 62px 80px 72px
+            height: 550px;
             justify-content: center
-            align-items: center
-            margin-top: 25px
-            width: 206px
-            height: 41px
-            background: #000000
-            transition: 0.5s all
-            &:hover
-                border-radius: 45px
-            a
+            background: #ffffff
+            top: -637px
+            right: 0px
+            transition: 0.6s all
+            &-item
+                list-style-type: none
+                margin-bottom: 15px
+                &:nth-child(4) 
+                    margin-top: 40px
+                &:nth-child(n+4) a
+                    font-weight: 400
+                    font-size: 18px 
+                &:nth-child(7)
+                    margin-top: 40px
+                    margin-bottom: 0    
+                .social-link
+                    text-decoration: none
+                    margin-right: 5px
+                    svg
+                        width: 24px
+                        height: 24px  
+            &-link
+                position: relative
+                font-weight: 700
+                font-size: 24px
+                color: #000000
                 text-decoration: none
-                font-weight: bold
-                font-size: 18px
-                color: #FFFFFF
+                &::before
+                    position: absolute
+                    bottom: 0
+                    transition: 0.6s all
+                    content: ''
+                    display: block
+                    height: 1px
+                    background-color: #000000
+                    width: 0%
+                &:hover
+                    &::before
+                        width: 100%
+            &-active
+                top: 0
+.header-dark
+    .search-form
+        form
+            input
+                background-color: #F2F2F2
+    nav
+        .cart-link
+            z-index: 2
+        .cart
+            fill: black
+        .hamburger
+            z-index: 2
+            span
+                background-color: #000000
+        .menu
+            z-index: 1
+           
+.bike
+    position: absolute
+    bottom: 229px
+    &-model
+        font-weight: 400
+        font-size: 24px
+        color: #FFFFFF
+        text-transform: uppercase
+    &-discr
+        font-weight: 700
+        font-size: 64px
+        color: #FFFFFF
+    &-link
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-top: 25px
+        width: 206px
+        height: 41px
+        background: #000000
+        transition: 0.5s all
+        &:hover
+            border-radius: 45px
+        a
+            text-decoration: none
+            font-weight: bold
+            font-size: 18px
+            color: #FFFFFF
 .second-screen
     width: 100%
     margin: 0 auto
@@ -538,3 +555,171 @@ footer
         a
              color: #484848 
              text-decoration: none
+.footer-static
+    position: static
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section-blog
+    background:url(../img/bg/Vector-blog-top-bg.svg)  no-repeat top , url(../img/bg/Vector-blog-bottom-bg.svg) no-repeat bottom
+    padding-top: 35px
+    padding-bottom: 400px
+    .blog-titl 
+        margin-top: 41px
+        text-align: center
+        font-weight: 700
+        font-size: 64px
+        color: #000000
+    .news-list
+        margin-top: 103px
+        display: grid
+        grid-template-columns: 413px 413px  413px 
+        grid-template-rows: 450px 732px
+        grid-column-gap: 30px
+        grid-row-gap: 33px
+        &-item1
+            grid-column-start: 1
+            grid-column-end: 4
+            grid-row-start: 1
+            grid-row-end: 1
+            display: flex
+            &-img
+                width: 54%
+                img
+                    width: 100%
+                    height: 100%
+            &-info
+                position: relative
+                width: 46%
+                padding: 30px 34px 14px 34px 
+                background-color: #000
+            &-title
+                margin: 0
+                font-weight: 700
+                font-size: 36px
+                color: #FFFFFF 
+            &-date
+                margin-top: 5px
+                font-weight: 400
+                font-size: 18px
+                color: #FFFFFF
+            &-text 
+                margin-top: 48px
+                font-weight: 400
+                font-size: 18px
+                color: #FFFFFF
+            a
+                display: block
+                position: absolute
+                bottom: 0
+                left: 0
+                width: 100%
+                height: 44px
+                border: 1px solid #000
+                font-weight: 700
+                font-size: 18px
+                line-height: 42px
+                text-align: center
+                color: #FFFFFF
+                text-decoration: none
+                transition: all 0.2s linear
+                &:hover
+                    cursor: pointer
+                    color: #000
+                    background-color: #FFFFFF
+        .col1 
+            grid-column-start: 1
+            grid-column-end: 2
+            grid-row-start: 2
+            grid-row-end: 2
+        &-item2
+            &-img
+                height: 336px
+                img
+                    width: 100%
+                    height: 100%
+            &-info
+                position: relative
+                height: 396px 
+                padding: 28px 23px 60px 23px
+                background-color: #000
+            &-title
+                margin: 0
+                font-weight: 700
+                font-size: 36px
+                color: #FFFFFF 
+            &-date
+                margin-top: 5px
+                font-weight: 400
+                font-size: 18px
+                color: #FFFFFF
+            &-text 
+                margin-top: 28px
+                font-weight: 400
+                font-size: 18px
+                color: #FFFFFF
+            a
+                display: block
+                position: absolute
+                bottom: 0
+                left: 0
+                width: 100%
+                height: 44px
+                border: 1px solid #000
+                font-weight: 700
+                font-size: 18px
+                line-height: 42px
+                text-align: center
+                color: #FFFFFF
+                text-decoration: none
+                transition: all 0.2s linear
+                &:hover
+                    cursor: pointer
+                    color: #000
+                    background-color: #FFFFFF
+.section-blogpost
+    background:url(../img/bg/Vector-blog-top-bg.svg)  no-repeat top , url(../img/bg/Vector-blog-bottom-bg.svg) no-repeat bottom
+    padding-top: 35px
+    padding-bottom: 400px
+    .article
+        margin-top: 60px
+        &-img
+            height: 500px
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.73) 0%, rgba(0, 0, 0, 0) 100%) , url(../img/blogpost/blogpost-large-img.jpg)
+            padding-left: 50px
+            padding-top: 50px
+        &-titl 
+            margin: 0
+            font-weight: 700
+            font-size: 36px
+            color: #FFFFFF
+        &-date
+            font-weight: 400
+            font-size: 18px
+            color: #FFFFFF
+        &-text 
+            margin-top: 75px
+            &-img
+                width: 483px
+                height: 361px
+                float: right
+                margin-left: 40px
+                margin-bottom: 30px
+                img
+                    width: 100%
+                    height: 100%
+            p
+                font-weight: 400
+                font-size: 18px
+                color: #000000
+
