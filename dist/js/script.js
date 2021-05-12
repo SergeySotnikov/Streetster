@@ -66,3 +66,34 @@ new Swiper('.news-slider',{
     // Бесконечный слайдер
     loop: true,
 });
+
+
+new Swiper('.product-slider',{
+    
+    // Кнопки для навигации
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+
+    //Пагинация
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+
+    // Количество отображаемых слайдов
+    slidesPerView: 1,
+
+    //Активный слайд по центру
+    centeredSlides: true,
+
+      // Отступ между слайдами
+    spaceBetween: 0,
+
+    // Отключение функционала если слайдов меньше чем нужно
+    watchOverflow: true,
+
+    // Бесконечный слайдер
+    loop: true,
+});
