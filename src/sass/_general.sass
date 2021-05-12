@@ -558,9 +558,6 @@ footer
 .footer-static
     position: static
 
-
-
-
 .category-info
     position: relative
     height: 100vh
@@ -601,6 +598,17 @@ footer
 .product-list
     .product-item
         display: flex
+        position: relative
+        &::before
+            content: ''
+            display: block
+            position: absolute
+            top: 0
+            height: 1px
+            width: 100%
+            background-color: #000000
+            z-index: 1
+
         &-left
             position: relative
             width: 31%
@@ -674,9 +682,11 @@ footer
                 color: #ffffff
                 background-color: #000
         &-right
+            position: relative
             width: 69%
             padding: 110px 70px 65px 70px
             .swiper-container
+                position: static
                 .swiper-slide
                     .slide-img
                         margin: 0 auto
@@ -687,8 +697,12 @@ footer
                         align-items: center;
                 .swiper-button-prev,.swiper-button-next
                     color: #000
+                .swiper-button-prev
+                    left: 70px
+                .swiper-button-next
+                    right: 70px
                 .swiper-pagination
-                    bottom: 0
+                    bottom: 65px
                 .swiper-pagination-bullet
                     width: 24px
                     height: 5.83px
