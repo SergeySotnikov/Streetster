@@ -13,7 +13,6 @@ body
 .first-screen
     position: relative
     height: 100vh
-    width: 100%
     margin: 0 auto
     padding-top: 35px
     padding-bottom: 229px
@@ -120,7 +119,7 @@ body
             background: #ffffff
             top: -637px
             right: 0px
-            transition: 0.6s all
+            transition: 0.3s all
             &-item
                 list-style-type: none
                 margin-bottom: 15px
@@ -147,7 +146,7 @@ body
                 &::before
                     position: absolute
                     bottom: 0
-                    transition: 0.6s all
+                    transition: 0.3s all
                     content: ''
                     display: block
                     height: 1px
@@ -190,25 +189,30 @@ body
         color: #FFFFFF
         text-transform: uppercase
     &-discr
-        font-weight: 700
-        font-size: 64px
-        color: #FFFFFF
+        p
+            margin: 0
+            font-weight: 700
+            font-size: 64px
+            color: #FFFFFF
     &-link
-        display: flex
-        justify-content: center
-        align-items: center
-        margin-top: 25px
-        width: 206px
-        height: 41px
-        background: #000000
-        transition: 0.5s all
-        &:hover
-            border-radius: 45px
         a
+            margin-top: 25px
+            display: inline-block   
+            width: 206px
+            height: 41px
+            border: 3px solid #000
             text-decoration: none
-            font-weight: bold
+            text-align: center
+            line-height: 38px
+            font-weight: 700
             font-size: 18px
             color: #FFFFFF
+            background-color: #000000
+            transition: 0.5s all
+            &:hover
+                background-color: #ffffff
+                color: #000000 
+           
 .second-screen
     width: 100%
     margin: 0 auto
@@ -437,17 +441,17 @@ body
                         width: 338px
                         height: 52.47px
                         border: 3px solid #000000
-                        box-sizing: border-box
                         font-weight: 700
                         font-size: 18px
                         text-align: center
                         color: #000000
-
+                        text-decoration: none
+                        line-height: 41px
+                        transition: 0.5s all
                         &:hover
                             cursor: pointer
                             background: #000000
                             border: 3px solid #000000
-                            box-sizing: border-box
                             color: #FFFFFF
             .swiper-button-prev
                 left: 100px
@@ -492,7 +496,7 @@ body
                     margin-top: 30px
                     width: 252px
                     height: 45px
-                    background: #000000
+                    background-color: #000000
                     border: 3px solid #000000
                     box-sizing: border-box
                     font-weight: 700
@@ -502,7 +506,8 @@ body
                     cursor: pointer
                     transition: 0.5s all
                     &:hover
-                        border-radius: 45px
+                        background: #ffffff
+                        color: #000000
 footer
     position: absolute
     bottom: -57px
@@ -781,28 +786,95 @@ footer
                 padding: 22px 32px
                 background-color: #F2F2F2
                 &-title
-                    span
+                    .title
                         font-weight: 700
                         font-size: 18px
                         color: #000000
+                        margin-right: 15px
                     .star
                         display: inline-block
-                        vertical-align: middle
-                        color: #FFDF6B
-                        font-size: 18px
-                        span
-                            
+                        .icon-star
+                            &::before
+                                content: '⭐'
+                &-text 
+                    font-weight: 400
+                    font-size: 18px
+                    color: #000000
+.section-other-product
+    padding-bottom: 80px 
+    background-image: url(../img/bg/Vector-blog-bottom-bg.svg)
 
-
-
-
-
-
-
-
-
-
-
+    .titl
+        margin: 0
+        font-weight: 700
+        font-size: 36px
+        color: #000000
+        text-align: center
+    .other-product
+        margin-top: 66px
+        display: flex
+        &-item
+            margin-right: 30px
+            width: 33%
+            height: 332px
+            position: relative
+            &:last-child
+                margin-right: 0
+            &-img
+                display: flex
+                align-items: center
+                position: absolute
+                top: 0
+                left: 50%
+                transform: translateX(-50%)
+                width: 305px
+                height: 197px
+                z-index: 1
+                img
+                    width: 100%
+            &-info
+                display: flex
+                justify-content: space-between
+                position: absolute
+                bottom: 0
+                width: 100%
+                height: 234px
+                padding: 118px 30px 40px 30px
+                background-color: #F2F2F2
+            &-titl
+                h2 
+                    margin: 0 
+                a
+                    font-weight: 700
+                    font-size: 36px
+                    color: #000000
+                    text-decoration: none
+                span
+                    font-weight: 450
+                    font-size: 24px
+                    color: #000000
+            &-color
+                .product-colors-item
+                    background: #F2F2F2
+                    border: 1px solid #c5c0c0
+                    display: inline-block
+                    vertical-align: middle
+                    width: 26px
+                    height: 26px
+                    border-radius: 50%
+                    padding: 4px
+                    margin-right: 6px
+                    .color
+                        border-radius: 50%
+                        width: 100%
+                        height: 100%
+                        display: block
+                    .blue
+                        background-color: #5A88FF
+                    .black
+                        background-color: #000000
+                    .red
+                        background-color: #FF5A5A
 .section-blog
     background:url(../img/bg/Vector-blog-top-bg.svg)  no-repeat top , url(../img/bg/Vector-blog-bottom-bg.svg) no-repeat bottom
     padding-top: 35px
@@ -846,6 +918,8 @@ footer
                 font-weight: 400
                 font-size: 18px
                 color: #FFFFFF
+                p 
+                    margin: 0
             &-text 
                 margin-top: 48px
                 font-weight: 400
@@ -858,7 +932,7 @@ footer
                 left: 0
                 width: 100%
                 height: 44px
-                border: 1px solid #000
+                border: 2px solid #000
                 font-weight: 700
                 font-size: 18px
                 line-height: 42px
@@ -896,6 +970,8 @@ footer
                 font-weight: 400
                 font-size: 18px
                 color: #FFFFFF
+                p 
+                    margin: 0
             &-text 
                 margin-top: 28px
                 font-weight: 400
@@ -908,7 +984,7 @@ footer
                 left: 0
                 width: 100%
                 height: 44px
-                border: 1px solid #000
+                border: 2px solid #000
                 font-weight: 700
                 font-size: 18px
                 line-height: 42px
