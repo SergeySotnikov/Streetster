@@ -2,17 +2,17 @@ window.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector('.menu'),
     menuItem = document.querySelectorAll('.menu-link , .social-link'),
     cart = document.querySelector('.cart'),
-    hamburger = document.querySelector('.hamburger');
+    hamburger = document.querySelector('.mobile-menu');
 
     hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('hamburger-active');
+        hamburger.classList.toggle('mobile-menu-active');
         menu.classList.toggle('menu-active');
         cart.classList.toggle('cart-menu-hover');
     });
 
     menuItem.forEach(item => {
         item.addEventListener('click', () => {
-            hamburger.classList.toggle('hamburger-active');
+            hamburger.classList.toggle('mobile-menu-active');
             menu.classList.toggle('menu-active');
             cart.classList.toggle('cart-menu-hover');
         })
