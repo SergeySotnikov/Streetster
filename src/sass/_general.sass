@@ -3,25 +3,21 @@ html
         --swiper-navigation-size: 33px
 body
     position: relative
-    max-width: 1441px
-    margin: 0 auto
 .container
-    width: 100%
+    max-width: 1441px
     margin: 0 auto
     padding: 0 70px
     height: 100%
 .first-screen
     position: relative
     height: 100vh
-    margin: 0 auto
     padding-top: 35px
     padding-bottom: 229px
-    background: url(../img/bg/first-screen-bg.jpg)
+    background-image: url(../img/bg/first-screen-bg.jpg)
     background-size: cover
     background-position: center bottom
     background-repeat: no-repeat
 .header
-    width: 100%
     height: 90px
     margin: 0 auto
     display: flex
@@ -62,27 +58,67 @@ body
                 border: none
                 outline: none
                 background: transparent
-                &::before
-                    content: ''
-                    display: block
-                    width: 14px
-                    height: 14px
-                    background-image: url('../icons/search.svg')
-    nav
+                svg
+                    fill: black
+                    height: 15px
+                    width: 15px
+    .right-menu
         display: flex
         justify-content: flex-end
         align-items: center
+        width: 100%
+        .lang
+            width: auto
+            margin-right: 35px
+            visibility: hidden
+            &-list
+                margin: 0
+                padding: 0
+                position: relative
+                z-index: 20
+                display: flex
+                list-style-type: none
+                &-item
+                    a
+                        position: relative
+                        text-decoration: none
+                        font-size: 24px
+                        color: #000000
+                        &::before
+                            position: absolute
+                            bottom: 0
+                            transition: 0.3s all
+                            content: ''
+                            display: block
+                            height: 1px
+                            background-color: #000000
+                            width: 0%
+                        &:hover
+                            &::before
+                                width: 100%
+                &-line 
+                    margin: 0 3px
+                    font-size: 24px
+            &-active
+                visibility: visible
+
         .cart-link
-            z-index: 1
+            z-index: 20
             width: 26px
             height: 25px
             margin-right: 35px
+            a
+                display: block
+                width: 100%
+                height: 100%    
         .cart
             fill: white
             &-menu-hover
+                width: 26px
+                height: 25px
                 fill: black
-        .mobile-menu
-            z-index: 1
+        .mobile-menu-btn
+            z-index: 20
             width: 26px
             height: 23px
             display: flex
@@ -110,70 +146,82 @@ body
                     &:nth-child(3)
                         transform: rotate(45deg)
         .menu
-            z-index: 0
+            z-index: 15
             position: absolute
             margin: 0
             display: flex
             flex-direction: column
-            width: 346px
+            width: 30%
             border-radius: 0px
             padding: 140px 62px 80px 72px
-            height: 550px;
-            justify-content: center
+            height: 100%
+            justify-content: flex-start
             background: #ffffff
-            top: -637px
-            right: 0px
+            top: -100%
+            right: 0
             transition: 0.3s all
-            &-item
-                list-style-type: none
-                margin-bottom: 15px
-                &:nth-child(4) 
-                    margin-top: 40px
-                &:nth-child(n+4) a
-                    font-weight: 400
-                    font-size: 18px 
-                &:nth-child(7)
-                    margin-top: 40px
-                    margin-bottom: 0    
-                .social-link
+            .main-nav,.info-nav,.social-nav
+                margin: 0
+                padding: 0
+                .nav-item
+                    list-style-type: none
+                    margin-bottom: 15px
+                .nav-link
+                    position: relative
+                    font-weight: 700
+                    font-size: 24px
+                    color: #000000
                     text-decoration: none
-                    margin-right: 5px
-                    svg
-                        width: 24px
-                        height: 24px  
-            &-link
-                position: relative
-                font-weight: 700
-                font-size: 24px
-                color: #000000
-                text-decoration: none
-                &::before
-                    position: absolute
-                    bottom: 0
-                    transition: 0.3s all
-                    content: ''
-                    display: block
-                    height: 1px
-                    background-color: #000000
-                    width: 0%
-                &:hover
                     &::before
-                        width: 100%
+                        position: absolute
+                        bottom: 0
+                        transition: 0.3s all
+                        content: ''
+                        display: block
+                        height: 1px
+                        background-color: #000000
+                        width: 0%
+                    &:hover
+                        &::before
+                            width: 100%
+                .info-link
+                    font-weight: 400
+                    font-size: 18px
+            .info-nav,.social-nav  
+                margin-top: 40px
+            .social-nav  
+                display: flex
+                justify-content: flex-start
+                align-items: center 
+                .nav-item
+                    margin: 0
+                    margin-right: 5px
+                .social-link
+                    
+                    svg
+                        width: 27px
+                        height: 28px
             &-active
+                height: 100%
                 top: 0
+                z-index: 15
+
 .header-dark
-    position: relative
-    z-index: 1
+    .logo
+        position: relative
+        z-index: 2
     .search-form
+        position: relative
+        z-index: 2
         form
             input
                 background-color: #F2F2F2
-    nav
+    .right-menu
         .cart-link
             z-index: 2
         .cart
             fill: black
-        .hamburger
+        .mobile-menu-btn
             z-index: 2
             span
                 background-color: #000000
@@ -222,7 +270,8 @@ body
     margin: 0 auto
     padding-top: 120px
     padding-bottom: 157px
-    background: url(../img/bg/Vector-second-bg.svg)
+    background-image: url(../img/bg/Vector-second-bg.svg)
+    
     .category
         &-title
             font-weight: 700
@@ -248,9 +297,18 @@ body
             transform: matrix(-1, 0, 0, 1, 0, 0)
         .swiper-slide-wrapper
             position: relative
+            width: 856px
+            height: 319px
+        .swiper-slide-img
+            width: 100%
+            height: 100%
+            img
+                width: 100%
+                height: 100%
+
         .swiper-slide-discr
             position: absolute
-            left: 50%
+            left: 45%
             transform: translateX(-37%)
             bottom: 20px
             a
@@ -361,6 +419,7 @@ body
     padding-top: 83px
     background-image: url(../img/bg/Vector-third-bg.svg)
     background-repeat: no-repeat
+    background-size: cover
     .streetster-titl
         font-weight: 700
         font-size: 36px
@@ -463,10 +522,10 @@ body
                             border: 3px solid #000000
                             color: #FFFFFF
             .swiper-button-prev
-                left: 100px
+                left: 30px
                 color: #000000
             .swiper-button-next
-                right: 100px
+                right: 30px
                 color: #000000
     .mailer-box
         position: relative
@@ -481,6 +540,7 @@ body
                 height: 100%
         .subscribe
             position: absolute
+            width: 100%
             top: 50%
             left: 50%
             transform: translate(-50% , -50%)
@@ -548,12 +608,23 @@ footer
                     font-size: 18px
                     color: #FFFFFF
                 a
+                    position: relative
                     text-decoration: none
                     font-weight: 400
                     font-size: 18px
                     color: #FFFFFF
+                    &::before
+                        position: absolute
+                        bottom: 0
+                        transition: 0.3s all
+                        content: ''
+                        display: block
+                        height: 1px
+                        background-color: #ffffff
+                        width: 0%
                     &:hover
-                        text-decoration: underline
+                        &::before
+                            width: 100%
         &-social
             ul
                 display: flex
@@ -586,7 +657,7 @@ footer
     margin: 0 auto
     padding-top: 35px
     padding-bottom: 220px
-    background: url(../img/bg/offroad-series-bg.jpg)
+    background-image: url(../img/bg/offroad-series-bg.jpg)
     background-size: cover
     background-position: center bottom
     background-repeat: no-repeat

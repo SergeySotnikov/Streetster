@@ -1,20 +1,24 @@
 window.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector('.menu'),
-    menuItem = document.querySelectorAll('.menu-link , .social-link'),
+    menuItem = document.querySelectorAll('.nav-link , .social-link , .lang-list-item'),
     cart = document.querySelector('.cart'),
-    hamburger = document.querySelector('.mobile-menu');
+    hamburger = document.querySelector('.mobile-menu-btn'),
+    lang = document.querySelector('.lang');
+    
 
     hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('mobile-menu-active');
+        hamburger.classList.toggle('mobile-menu-btn-active');
         menu.classList.toggle('menu-active');
         cart.classList.toggle('cart-menu-hover');
+        lang.classList.toggle('lang-active');
     });
 
     menuItem.forEach(item => {
         item.addEventListener('click', () => {
-            hamburger.classList.toggle('mobile-menu-active');
+            hamburger.classList.toggle('mobile-menu-btn-active');
             menu.classList.toggle('menu-active');
             cart.classList.toggle('cart-menu-hover');
+            lang.classList.toggle('lang-active');
         })
     })
 })
@@ -28,13 +32,13 @@ new Swiper('.bike-slider',{
     },
 
     // Количество отображаемых слайдов
-    slidesPerView: 1.9,
+    slidesPerView: 2,
 
     // Отключение функционала если слайдов меньше чем нужно
     watchOverflow: true,
 
     // Отступ между слайдами
-    /* spaceBetween: -300, */
+    spaceBetween: -90,
 
     //Активный слайд по центру
     centeredSlides: true,
