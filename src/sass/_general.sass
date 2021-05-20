@@ -8,7 +8,7 @@ body
     margin: 0 auto
     padding: 0 70px
     height: 100%
-.first-screen
+.streetster-promo
     position: relative
     height: 100vh
     padding-top: 35px
@@ -272,7 +272,7 @@ body
     padding-bottom: 157px
     background-image: url(../img/bg/Vector-second-bg.svg)
     
-    .category
+    .category-bike-slider
         &-title
             font-weight: 700
             font-size: 64px
@@ -324,7 +324,7 @@ body
         .swiper-button-next
             right: 100px
             color: #FFFFFF   
-    .product
+    .product-favorite
         margin-top: 170px
         &-title
             font-weight: 700
@@ -335,7 +335,7 @@ body
             margin-top: 30px
             display: flex
             height: 450px
-            .mainitem
+            .product-main
                 position: relative
                 padding: 60px 72px 0 0
                 flex-grow: 1
@@ -373,7 +373,7 @@ body
                     a:hover 
                         transform: scale(1.2)
         
-            .sideitem
+            .product-second
                 width: 550px
                 display: flex
                 flex-direction: column
@@ -464,7 +464,7 @@ body
                     font-size: 18px
                     text-align: center
                     color: #000000
-.news
+.section-news
     position: relative
     top: -247px
     &-titl
@@ -479,7 +479,7 @@ body
             position: static
             width: 1098px
             height: 558.4px
-            .swiper-slide-news
+            .news-item
                 width: 338px
                 .slide-news-img
                     width: 338px
@@ -806,10 +806,12 @@ footer
     position: relative
     height: 100vh
     .product
-        width: 100%
+        max-width: 1441px
         display: flex
         position: absolute
         top: 0
+        left: 50%
+        transform: translateX(-50%)
         &-left
             display: flex
             align-items: center
@@ -1173,6 +1175,7 @@ footer
                         background-color: #FF5A5A
 .section-blog
     background:url(../img/bg/Vector-blog-top-bg.svg)  no-repeat top , url(../img/bg/Vector-blog-bottom-bg.svg) no-repeat bottom
+    background-size: 100% 45%
     padding-top: 35px
     padding-bottom: 400px
     .blog-titl 
@@ -1294,6 +1297,7 @@ footer
                     background-color: #FFFFFF
 .section-blogpost
     background:url(../img/bg/Vector-blog-top-bg.svg)  no-repeat top , url(../img/bg/Vector-blog-bottom-bg.svg) no-repeat bottom
+    background-size: 100% 45%
     padding-top: 35px
     padding-bottom: 400px
     .article
