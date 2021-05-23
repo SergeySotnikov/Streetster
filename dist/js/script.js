@@ -45,6 +45,26 @@ new Swiper('.bike-slider',{
 
     // Бесконечный слайдер
     loop: true,
+
+    breakpoints: {
+        1200: {
+          slidesPerView: 2,
+          spaceBetween: -90,
+        },
+        1024: {
+          slidesPerView: 1.8,
+          spaceBetween: -90,
+        },
+        425: {
+          slidesPerView: 1.5,
+          spaceBetween: -40,
+        },
+        320: {
+            slidesPerView: 1.5,
+            spaceBetween: -20,
+          },
+       
+      }
 });
 
 new Swiper('.news-slider',{

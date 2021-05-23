@@ -14,7 +14,25 @@
     .second-screen .product-favorite-wrapper .product-main
         width: 100%
     .second-screen .product-favorite-wrapper .product-second
+        width: 100%
         flex-direction: row
+        justify-content: space-between
+        align-items: center
+        margin-top: 30px
+    .second-screen .product-favorite-wrapper .product-second-item
+        margin: 0
+        margin-bottom: 30px
+        height: 210px
+        width: 100%
+        max-width: 48%
+    .second-screen .bike-slider .swiper-slide-discr a
+        font-size: 35px
+    
+    
+        
+    .second-screen .product-favorite-wrapper .product-second-item:nth-child(1),.second-screen .product-favorite-wrapper .product-second-item:nth-child(2)
+        margin: 0
+        margin-bottom: 30px
         
 @media  ( max-width: 1081px )   
     .header .right-menu .menu
@@ -25,6 +43,8 @@
         justify-content: center
     .header .right-menu .menu .info-nav .nav-link::before, .header .right-menu .menu .main-nav .nav-link::before, .header .right-menu .menu .social-nav .nav-link::before
         left: 0
+    
+        
 
 @media  ( max-width: 888px )
     .container
@@ -35,6 +55,10 @@
         .model-info-descr
             p
                 font-size: 40px
+    .second-screen .bike-slider .swiper-button-next,.second-screen .bike-slider .swiper-button-prev, .second-screen .bike-slider .bg-layer-next,.second-screen .bike-slider .bg-layer-prev
+        display: none
+    .second-screen .bike-slider .swiper-slide-discr a
+        font-size: 30px
         
 
 @media  ( max-width: 767px )
@@ -52,6 +76,21 @@
         .model-info-descr
             p
                 font-size: 30px
+    .second-screen .product-favorite-wrapper .product-second
+        width: 100%
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        margin-top: 30px
+    .second-screen .product-favorite-wrapper .product-second-item
+        margin: 0
+        margin-bottom: 30px
+        height: 210px
+        max-width: 100%
+        width: 100%
+    .second-screen .bike-slider .swiper-slide-discr a
+        font-size: 20px
+    
 
 @media  ( max-width: 560px )
         .streetster-promo 
@@ -60,16 +99,23 @@
                     font-size: 24px
             .model-info-name
                 font-size: 16px
+        .second-screen .bike-slider .swiper-slide-discr a
+            font-size: 18px
 
 @media  ( max-width: 470px )
     .container
         padding: 0 10px
+    .header .logo
+        width: 83px
+        height: 36px
     .streetster-promo 
         .model-info-descr
             p
                 font-size: 16px
         .model-info-name
             font-size: 14px
+    .second-screen .bike-slider .swiper-slide-discr a
+            font-size: 13px
 
 
     
