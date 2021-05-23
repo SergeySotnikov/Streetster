@@ -89,6 +89,26 @@ new Swiper('.news-slider',{
 
     // Бесконечный слайдер
     loop: true,
+    breakpoints: {
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 42,
+        },
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 0,
+        },
+        425: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+       
+      }
+    
 });
 
 
