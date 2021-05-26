@@ -282,29 +282,25 @@ body
         position: relative
         .bg-layer-prev
             width: 204px
-            height: 320px
+            height: 100%
             position: absolute
             z-index: 2
             background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%)
         .bg-layer-next
             width: 204px
-            height: 320px
+            height: 100%
             position: absolute
             z-index: 2
             right: 0
             background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%)
             transform: matrix(-1, 0, 0, 1, 0, 0)
+        .swiper-wrapper
         .swiper-slide-wrapper
-            position: relative
-            width: 856px
-            max-height: 319px
+            max-height: 323px
         .swiper-slide-img
-            width: 100%
-            height: 100%
             img
-                width: 100%
                 height: 100%
-
+                width: 100%
         .swiper-slide-discr
             position: absolute
             left: 45%
@@ -480,12 +476,15 @@ body
             max-width: 84%
             max-height: 558.4px
             .news-item
-                width: 338px
+            
                 .slide-news-img
                     margin: 0 auto
-                    overflow: hidden
                     max-width: 338px
                     height: 288px
+                    img
+                        object-fit: cover
+                        width: 100%
+                        height: 100%
                 .news-descr
                     margin: 0 auto
                     position: relative

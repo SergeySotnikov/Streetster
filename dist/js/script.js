@@ -35,7 +35,7 @@ new Swiper('.bike-slider',{
     slidesPerView: 2,
 
     // Отключение функционала если слайдов меньше чем нужно
-    watchOverflow: true,
+    watchOverflow: false,
 
     // Отступ между слайдами
     spaceBetween: -90,
@@ -97,6 +97,7 @@ new Swiper('.news-slider',{
         1024: {
           slidesPerView: 2,
           spaceBetween: 0,
+          centeredSlides: false,
         },
         425: {
           slidesPerView: 1,
