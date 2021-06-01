@@ -209,7 +209,7 @@ body
 .header-dark
     .logo
         position: relative
-        z-index: 2
+        z-index: 1
     .search-form
         position: relative
         z-index: 2
@@ -810,29 +810,35 @@ footer
     position: relative
     height: 100vh
     .product
-        max-width: 1441px
+        height: 100vh
+        width: 1441px
+        max-width: 100%
         display: flex
         position: absolute
         top: 0
         left: 50%
         transform: translateX(-50%)
         &-left
+            
             display: flex
             align-items: center
             position: relative
             width: 69.2%
-            height: 100vh
             background-color: #F2F2F2
             .swiper-container
                 position: static
                 .swiper-slide
                     .slide-img
                         margin: 0 auto
-                        width: 695px
-                        height: 464px
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
+                        max-width: 695px
+                        max-height: 464px
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        img
+                            width: 100%
+                            height: 100%
+                            object-fit: cover
                 .swiper-button-prev,.swiper-button-next
                     color: #000
                 .swiper-button-prev
@@ -1191,8 +1197,6 @@ footer
     .news-list
         margin-top: 103px
         display: grid
-        grid-template-columns: 413px 413px  413px 
-        grid-template-rows: 450px 732px
         grid-column-gap: 30px
         grid-row-gap: 33px
         &-item1
@@ -1204,6 +1208,7 @@ footer
             &-img
                 width: 54%
                 img
+                    object-fit: cover
                     width: 100%
                     height: 100%
             &-info
@@ -1256,11 +1261,12 @@ footer
             &-img
                 height: 336px
                 img
+                    object-fit: cover
                     width: 100%
                     height: 100%
             &-info
                 position: relative
-                height: 396px 
+                min-height: 396px 
                 padding: 28px 23px 60px 23px
                 background-color: #000
             &-title
