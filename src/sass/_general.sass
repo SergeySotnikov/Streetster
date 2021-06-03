@@ -157,7 +157,7 @@ body
             height: 100%
             justify-content: flex-start
             background: #ffffff
-            top: -100%
+            top: -150%
             right: 0
             transition: 0.3s all
             .main-nav,.info-nav,.social-nav
@@ -1344,4 +1344,157 @@ footer
                 font-weight: 400
                 font-size: 18px
                 color: #000000
+.section-chekout
+    padding-top: 35px
+    padding-bottom: 40px 
+    .chekout-titl
+        margin-top: 50px
+        font-weight: 700
+        font-size: 64px
+        text-align: center
+        color: #000000
+    .chekout-container
+        position: relative
+        margin-top: 50px
+        display: flex
+        justify-content: space-between
+    .chekout-product
+        width: 45%
+        .product-item
+            position: relative
+            margin-top: 20px
+            padding: 0 25px
+            display: flex
+            justify-content: space-between
+            align-items: center
+            min-height: 100px
+            background-color: #F2F2F2
+            &__img
+                width: 15%
+                max-height: 78.86px
+                img
+                    max-height: 100%
+                    max-width: 100%
+                    object-fit: cover
+            &__descr
+                width: 40%
+                h2
+                    font-weight: 700
+                    font-size: 18px
+                    color: #000000
+                p
+                    font-weight: 400
+                    font-size: 18px
+                    color: #000000
+            &__quantity
+                width: 13%
+                display: flex
+                align-items: center
+                input::-webkit-inner-spin-button,
+                input::-webkit-outer-spin-button 
+                    appearance: none
+                    margin: 0
+                .quantity-num
+                    appearance: textfield
+                    width: 30px
+                    height: 30px
+                    background-color: #000000
+                    font-weight: 400
+                    font-size: 18px
+                    text-align: center
+                    color: #FFFFFF
+                    border: none
+                .quantity-arrow-minus,.quantity-arrow-plus
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    padding: 0 6px
+                    background-color: unset
+                    border: none
+                    cursor: pointer
+                    font-weight: 400
+                    font-size: 24px
+                    text-align: center
+                    color: #000000
+            &__price
+                width: 15%
+                span
+                    font-weight: 450
+                    font-size: 18px
+                    color: #000000
+            &:not(:last-child)::before
+                content: ''
+                display: block
+                width: 100%
+                height: 1px
+                background-color: #000000
+                position: absolute
+                bottom: 0
+                left: 0
+            &:last-child
+                margin-top: 0
+        &__subtotal
+            margin-top: 20px
+            text-align: right
+            font-size: 18px
+            span
+                font-weight: 450
+        &__buttons
+            margin-top: 30px
+            display: flex
+            justify-content: space-between
+            .chekout-btn
+                display: flex
+                justify-content: center
+                align-items: center
+                background-color: unset
+                text-decoration: none
+                width: 251px
+                height: 45px
+                max-width: 100%
+                max-height: 100%
+                border: 3px solid #000000
+                font-weight: 700
+                font-size: 18px
+                color: #000000
+                cursor: pointer
+                transition: .3s all
+                &:hover
+                    background-color: #000000
+                    color: #ffffff
+    .product-titl
+            font-weight: bold
+            font-size: 24px
+            color: #000000
+    .delivery
+            margin-top: 20px
+    .chekout-form
+        width: 55% 
+        margin-left: 120px
+        .contact-information
+            margin-top: 20px
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+            .input-descr
+                display: block
+                font-weight: 400
+                font-size: 18px
+                color: #000000
+            input[type="text"],select
+                margin-top: 4px
+                width: 303px
+                height: 40px
+                background-color: #FFFFFF
+                border: 3px solid #000000
+                box-sizing: border-box
+            .tel,.email,.city,.address
+                margin-top: 10px
 
+    .policy
+        margin-top: 18.5vh
+        text-align: center
+        color: #E7E7E7
+        a
+            text-decoration: none
+            color: #E7E7E7

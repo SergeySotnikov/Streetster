@@ -4,6 +4,7 @@ window.addEventListener('DOMContentLoaded', () => {
     cart = document.querySelector('.cart'),
     hamburger = document.querySelector('.mobile-menu-btn'),
     lang = document.querySelector('.lang');
+   
     
 
     hamburger.addEventListener('click', () => {
@@ -13,6 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
         lang.classList.toggle('lang-active');
     });
 
+
     menuItem.forEach(item => {
         item.addEventListener('click', () => {
             hamburger.classList.toggle('mobile-menu-btn-active');
@@ -20,8 +22,38 @@ window.addEventListener('DOMContentLoaded', () => {
             cart.classList.toggle('cart-menu-hover');
             lang.classList.toggle('lang-active');
         })
-    })
-})
+    });
+
+
+    // button + and -
+let quantityArrowMinus = document.querySelector(".quantity-arrow-minus");
+let quantityArrowPlus = document.querySelector(".quantity-arrow-plus");
+
+quantityArrowMinus.addEventListener('click', () => {
+  quantityMinus() 
+});
+quantityArrowPlus.addEventListener('click', () => {
+  quantityPlus()
+});
+
+
+function quantityMinus() {
+if (document.querySelector(".quantity-num").value >= 1) {
+  document.querySelector(".quantity-num").value = Number(document.querySelector(".quantity-num").value) - 1;
+}
+}
+
+function quantityPlus() {
+  document.querySelector(".quantity-num").value = Number(document.querySelector(".quantity-num").value) + 1;
+}
+
+
+});
+
+
+
+
+
 
 new Swiper('.bike-slider',{
     
@@ -142,3 +174,6 @@ new Swiper('.product-slider',{
     // Бесконечный слайдер
     loop: true,
 });
+
+
+ 
