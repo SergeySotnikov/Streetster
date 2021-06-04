@@ -1,4 +1,40 @@
 @media  ( max-width: 1410px )
+    .section-product-descr .product
+        flex-direction: column
+    .section-product-descr .product-left
+        width: 100%
+        padding-bottom: 60px
+    .section-product-descr .product-left .swiper-container
+        margin-top: 170px
+    .section-product-descr .product-left .swiper-container .swiper-pagination
+        bottom: 30px
+    .section-product-descr .product-right
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        padding-top: 0
+        flex-wrap: wrap
+        width: 100%
+        margin-top: 30px
+        form
+            margin-top: 20px
+            display: flex
+            justify-content: space-between
+            align-items: flex-start
+            flex-wrap: wrap
+            width: 100%
+    .section-product-descr .product-total-price
+        width: 100%
+    .section-product-descr .product .product-add-item
+        margin-right: 20px
+        &:last-child
+            margin-right: 0
+
+    .section-product-descr .product-hr
+        display: none
+    .section-product-info
+        margin-top: 38vh
+
     .section-other-product .other-product-item-titl h2 a
         font-size: 28px
     .chekout-container
@@ -84,7 +120,8 @@
         left: 20px
     .product-list .product-item-right .swiper-container .swiper-button-next
         right: 0
-
+    .section-product-descr .product-right
+        padding: 0 40px
 
 
 
@@ -157,6 +194,9 @@
     .section-other-product .other-product-item
         width: 50%
         margin-right: 0
+    .section-product-descr .product-right
+        padding: 0 30px
+
     .product-list .product-item-titl
         font-size: 30px
     .product-list .product-item-price
@@ -188,7 +228,7 @@
             min-width: 110px
             height: 60px
         
-@media  ( max-width: 768px )
+@media  ( max-width: 767px )
     .container
         padding: 0 15px
     .second-screen .category-bike-slider-title,.second-screen .product-favorite-title,.streetster-descr .streetster-titl,.section-news-titl
@@ -256,7 +296,12 @@
         margin-left: 15px
         margin-bottom: 10px
     .section-chekout .chekout-titl
+    .section-product-descr .product-left .swiper-container .swiper-button-next, .section-product-descr .product-left .swiper-container .swiper-button-prev
+        display: none
         font-size: 45px
+    .section-product-descr .product-right
+        padding: 0 15px
+
     footer .footer-category ul li, footer .footer-info ul li
         font-size: 16px
     footer .footer-logo
@@ -299,7 +344,7 @@
         bottom: 50px
     .product-list .product-item-right
         padding-top: 8vh
-    .section-blog,.section-blogpost
+    .section-blog,.section-blogpost,.section-product-descr
         padding-top: 0
     .section-chekout
         padding-top: 0
@@ -325,6 +370,8 @@
         font-size: 15px
     .section-chekout .chekout-product__buttons .chekout-btn
         margin-top: 20px
+    .section-product-descr .product-right,
+        padding: 0 10px
     
     footer
         height: unset
@@ -405,9 +452,16 @@
         font-size: 30px
     .category-info .category-text
         font-size: 15px
+    .section-product-descr .product .product-add-item
+        width: 125px
     .product-list .product-item-right .swiper-container .swiper-pagination
         bottom: 40px
     .section-product-info .product-info-reviews .reviews-item-title .star .icon-star
         font-size: 12px
+    .section-product-descr .color
+        margin-right: 5px
+    .section-product-info 
+        margin-top: 60vh
+
 
     
